@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+  position: relative;
+}
+.App button {
+  margin-top: 60px;
+  position: relative;
+   display: inline-block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: #fff;
+}
+body {
+  margin: 0;
+  padding: 0 0 100px 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #232323;
+}
+
+.card-container {
+  position: relative;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 3px #f3f3f3 solid;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s linear;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  padding: 10px;
+  max-width: 220px;
+  text-align: left;
+  margin-top: 100px;
+}
+.card:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+.card img {
+  max-width: calc(100%);
+  margin: 0 auto;
+  display: block;
+}
+.card .index {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  padding: 0 10px;
+}
+.card .details {
+  position: relative;
+}
+.card .features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.card .features li {
+  padding-left: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.card .features li span {
+  display: none;
+}
+
+.card .features li.icon-bed {
+  background: url(./assets/bed-left-side.svg) left center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.card .features li.icon-bath {
+  background: url(./assets/bathtub.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.card .features li.icon-car {
+  background: url(./assets/car-compact.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
